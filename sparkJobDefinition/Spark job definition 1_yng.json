@@ -1,0 +1,21 @@
+{
+	"name": "Spark job definition 1_yng",
+	"properties": {
+		"targetBigDataPool": {
+			"type": "BigDataPoolReference"
+		},
+		"language": "scala",
+		"jobProperties": {
+			"name": "Spark job definition 1_yng",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"numExecutors": 2
+		}
+	}
+}
