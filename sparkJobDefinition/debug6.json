@@ -1,0 +1,26 @@
+{
+	"name": "debug6",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "catest",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "python",
+		"jobProperties": {
+			"name": "debug6",
+			"file": "abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/debug6/DebugCase6.py",
+			"args": [
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/debug6/shakespeare.txt",
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/debug6/shakespeare"
+			],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 3
+		}
+	}
+}

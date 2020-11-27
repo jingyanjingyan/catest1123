@@ -1,0 +1,48 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "catest",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2
+		},
+		"metadata": {
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/82c68106-db61-440a-8c6d-5f52d93a2247/resourceGroups/honghaiRG/providers/Microsoft.Synapse/workspaces/catestws2/bigDataPools/catest",
+				"name": "catest",
+				"type": "Spark",
+				"endpoint": "https://catestws2.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/catest",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"a=100\n",
+					"b=0\n",
+					"print(a/b)"
+				],
+				"execution_count": 1
+			}
+		]
+	}
+}
