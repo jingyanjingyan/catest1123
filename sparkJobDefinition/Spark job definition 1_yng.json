@@ -1,6 +1,7 @@
 {
 	"name": "Spark job definition 1_yng",
 	"properties": {
+		"description": "e",
 		"targetBigDataPool": {
 			"type": "BigDataPoolReference"
 		},
