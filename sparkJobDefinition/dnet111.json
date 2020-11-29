@@ -1,0 +1,38 @@
+{
+	"name": "dnet111",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "j11111",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "csharp",
+		"jobProperties": {
+			"name": "dnet111",
+			"file": "local:///usr/hdp/current/spark2-client/jars/microsoft-spark.jar",
+			"className": "org.apache.spark.deploy.dotnet.DotnetRunner",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
+			},
+			"args": [
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/dnet111/wordcount.zip",
+				"WordCount",
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/dnet111/shakespeare.txt",
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/dnet111/shakespeare"
+			],
+			"jars": [],
+			"files": [],
+			"archives": [
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/catestws2/batchjobs/dnet111/wordcount.zip#udfs"
+			],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2
+		}
+	}
+}
