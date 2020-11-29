@@ -1,0 +1,24 @@
+{
+	"name": "Spark job definition 4",
+	"properties": {
+		"folder": {
+			"name": "New folder"
+		},
+		"targetBigDataPool": {
+			"type": "BigDataPoolReference"
+		},
+		"language": "python",
+		"jobProperties": {
+			"name": "Spark job definition 4",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"numExecutors": 2
+		}
+	}
+}
