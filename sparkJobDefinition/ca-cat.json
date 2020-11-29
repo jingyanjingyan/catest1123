@@ -3,8 +3,10 @@
 	"properties": {
 		"description": "ewr",
 		"targetBigDataPool": {
+			"referenceName": "catest",
 			"type": "BigDataPoolReference"
 		},
+		"requiredSparkVersion": "2.4",
 		"language": "scala",
 		"jobProperties": {
 			"name": "ca-cat",
@@ -21,6 +23,10 @@
 			],
 			"jars": [],
 			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
 			"numExecutors": 2
 		}
 	}

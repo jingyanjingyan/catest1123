@@ -2,6 +2,9 @@
 	"name": "ca-cat_Copy1",
 	"properties": {
 		"description": "ewr",
+		"folder": {
+			"name": "1"
+		},
 		"targetBigDataPool": {
 			"type": "BigDataPoolReference"
 		},

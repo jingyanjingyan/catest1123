@@ -1,6 +1,9 @@
 {
 	"name": "Spark job definition 1",
 	"properties": {
+		"folder": {
+			"name": "1"
+		},
 		"targetBigDataPool": {
 			"type": "BigDataPoolReference"
 		},
