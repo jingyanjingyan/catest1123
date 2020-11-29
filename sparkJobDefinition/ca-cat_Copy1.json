@@ -1,5 +1,5 @@
 {
-	"name": "ca-cat",
+	"name": "ca-cat_Copy1",
 	"properties": {
 		"description": "ewr",
 		"targetBigDataPool": {
@@ -7,7 +7,7 @@
 		},
 		"language": "scala",
 		"jobProperties": {
-			"name": "ca-cat",
+			"name": "ca-cat_Copy1",
 			"file": "abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/ca/wordcount.jar",
 			"className": "WordCount",
 			"conf": {
