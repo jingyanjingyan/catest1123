@@ -1,0 +1,26 @@
+{
+	"name": "java-cat",
+	"properties": {
+		"targetBigDataPool": {
+			"type": "BigDataPoolReference"
+		},
+		"language": "scala",
+		"jobProperties": {
+			"name": "java-cat",
+			"file": "abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/wordcount.jar",
+			"className": "WordCount",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/shakespeare.txt",
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/shakespeare"
+			],
+			"jars": [],
+			"files": [],
+			"numExecutors": 2
+		}
+	}
+}
