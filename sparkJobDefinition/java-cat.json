@@ -2,8 +2,10 @@
 	"name": "java-cat",
 	"properties": {
 		"targetBigDataPool": {
+			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
 		},
+		"requiredSparkVersion": "2.4",
 		"language": "scala",
 		"jobProperties": {
 			"name": "java-cat",
@@ -20,6 +22,10 @@
 			],
 			"jars": [],
 			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
 			"numExecutors": 2
 		}
 	}
