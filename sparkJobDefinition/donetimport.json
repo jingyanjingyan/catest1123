@@ -3,10 +3,8 @@
 	"properties": {
 		"description": "my do net upload by zip",
 		"targetBigDataPool": {
-			"referenceName": "catest",
 			"type": "BigDataPoolReference"
 		},
-		"requiredSparkVersion": "2.4",
 		"language": "csharp",
 		"jobProperties": {
 			"name": "donetimport",
@@ -29,10 +27,6 @@
 			"archives": [
 				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/bdbj0520yan/batchjobs/donet/wordcount.zip#udfs"
 			],
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
 			"numExecutors": 2
 		}
 	}
