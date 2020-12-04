@@ -3,10 +3,8 @@
 	"properties": {
 		"description": "my python",
 		"targetBigDataPool": {
-			"referenceName": "catest",
 			"type": "BigDataPoolReference"
 		},
-		"requiredSparkVersion": "2.4",
 		"language": "python",
 		"jobProperties": {
 			"name": "pythonimport2",
@@ -22,10 +20,6 @@
 			],
 			"jars": [],
 			"files": [],
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
 			"numExecutors": 2
 		}
 	}
