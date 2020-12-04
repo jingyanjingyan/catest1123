@@ -2,7 +2,7 @@
 	"name": "dnet111",
 	"properties": {
 		"targetBigDataPool": {
-			"referenceName": "j11111",
+			"referenceName": "catestsparkpool",
 			"type": "BigDataPoolReference"
 		},
 		"requiredSparkVersion": "2.4",
