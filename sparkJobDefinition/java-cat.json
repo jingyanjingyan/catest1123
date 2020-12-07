@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "1",
 		"targetBigDataPool": {
-			"referenceName": "j11111",
+			"referenceName": "catest",
 			"type": "BigDataPoolReference"
 		},
 		"requiredSparkVersion": "2.4",
