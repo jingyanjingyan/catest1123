@@ -1,0 +1,32 @@
+{
+	"name": "dnet-cat",
+	"properties": {
+		"targetBigDataPool": {
+			"type": "BigDataPoolReference"
+		},
+		"language": "csharp",
+		"jobProperties": {
+			"name": "dnet-cat",
+			"file": "local:///usr/hdp/current/spark2-client/jars/microsoft-spark.jar",
+			"className": "org.apache.spark.deploy.dotnet.DotnetRunner",
+			"conf": {
+				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs",
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/dnet/wordcount.zip",
+				"WordCount",
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/dnet/shakespeare.txt",
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/dnet/shakespeare"
+			],
+			"jars": [],
+			"files": [],
+			"archives": [
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/dnet/wordcount.zip#udfs"
+			],
+			"numExecutors": 2
+		}
+	}
+}

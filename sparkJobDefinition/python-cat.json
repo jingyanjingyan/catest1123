@@ -1,0 +1,25 @@
+{
+	"name": "python-cat",
+	"properties": {
+		"targetBigDataPool": {
+			"type": "BigDataPoolReference"
+		},
+		"language": "python",
+		"jobProperties": {
+			"name": "python-cat",
+			"file": "abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/python/wordcount.py",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			},
+			"args": [
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/python/shakespeare.txt",
+				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/python/shakespeare"
+			],
+			"jars": [],
+			"files": [],
+			"numExecutors": 2
+		}
+	}
+}
