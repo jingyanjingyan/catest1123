@@ -1,6 +1,7 @@
 {
 	"name": "java-cat",
 	"properties": {
+		"description": "1",
 		"targetBigDataPool": {
 			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
