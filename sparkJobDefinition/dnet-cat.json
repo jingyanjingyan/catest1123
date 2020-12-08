@@ -2,8 +2,10 @@
 	"name": "dnet-cat",
 	"properties": {
 		"targetBigDataPool": {
+			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
 		},
+		"requiredSparkVersion": "2.4",
 		"language": "csharp",
 		"jobProperties": {
 			"name": "dnet-cat",
@@ -26,6 +28,10 @@
 			"archives": [
 				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/dnet/wordcount.zip#udfs"
 			],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
 			"numExecutors": 2
 		}
 	}
