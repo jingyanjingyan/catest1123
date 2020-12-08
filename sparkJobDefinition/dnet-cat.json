@@ -1,6 +1,7 @@
 {
 	"name": "dnet-cat",
 	"properties": {
+		"description": "2",
 		"targetBigDataPool": {
 			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
