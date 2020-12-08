@@ -1,15 +1,16 @@
 {
-	"name": "java-cat",
+	"name": "scalaimport",
 	"properties": {
+		"description": "my scala",
 		"targetBigDataPool": {
-			"referenceName": "catest",
+			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
 		},
 		"requiredSparkVersion": "2.4",
 		"language": "scala",
 		"jobProperties": {
-			"name": "java-cat",
-			"file": "abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/wordcount.jar",
+			"name": "scalaimport",
+			"file": "abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/bdbj0520yan/batchjobs/scala/wordcount.jar",
 			"className": "WordCount",
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
@@ -17,8 +18,8 @@
 				"spark.dynamicAllocation.maxExecutors": "2"
 			},
 			"args": [
-				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/shakespeare.txt",
-				"abfss://catesteus2gen2-2020-05-11t07-20-48-099z@catestgen2.dfs.core.windows.net/synapse/workspaces/catest0715/batchjobs/java/shakespeare"
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/bdbj0520yan/batchjobs/scala/shakespeare.txt",
+				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/bdbj0520yan/batchjobs/scala/shakespeare"
 			],
 			"jars": [],
 			"files": [],

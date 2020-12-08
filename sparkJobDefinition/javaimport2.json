@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "my java",
 		"targetBigDataPool": {
-			"referenceName": "small",
+			"referenceName": "j11111",
 			"type": "BigDataPoolReference"
 		},
 		"requiredSparkVersion": "2.4",
@@ -14,8 +14,8 @@
 			"className": "WordCount",
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
-				"spark.dynamicAllocation.minExecutors": "3",
-				"spark.dynamicAllocation.maxExecutors": "3"
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
 			},
 			"args": [
 				"abfss://defaultfs@hozhaobdbj.dfs.core.windows.net/synapse/workspaces/bdbj0520yan/batchjobs/java/shakespeare.txt",
@@ -27,7 +27,7 @@
 			"driverCores": 4,
 			"executorMemory": "28g",
 			"executorCores": 4,
-			"numExecutors": 3
+			"numExecutors": 2
 		}
 	}
 }
